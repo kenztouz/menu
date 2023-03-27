@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Menu</title>
+	<link rel="stylesheet" type="text/css" href="menurest.css">
+</head>
+<body>
+	<header>
+		<h1>Restaurant kenz</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="menu">
+		<h2>Menu</h2>
+		<div class="item">
+			<h3>BOISSON</h3>
+			<p>jus d'orange</p>
+      <p>jus de carrot</p>
+			<span>$5</span>
+			<button class="add-to-order" data-item="BOISSON" data-price="5">Add to Order</button>
+		</div>
+		<div class="item">
+			<h3>PLATS </h3>
+			<p>plats brochette de dinde</p>
+			<span>$15</span>
+			<button class="add-to-order" data-item="PLATS" data-price="15">Add to Order</button>
+		</div>
+		<div class="item">
+			<h3>DESSERT :</h3>
+			<p>fondant chocolat</p>
+			<span>$12</span>
+			<button class="add-to-order" data-item="DESSERT" data-price="12">Add to Order</button>
+		</div>
+    
+	</section>
+
+	<section class="order-form">
+		<h2>make your order here </h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="items">Items:</label>
+			<select id="items" name="items" multiple></select>
+
+			<label for="total">Total:</label>
+			<input type="text" id="total" name="total" readonly>
+
+			<button type="submit">Submit Order</button>
+		</form>
+	</section>
+
+	<footer>
+		<p>Restaurant kenz</p>
+    <p>thank you for visting us</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
